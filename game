@@ -1,0 +1,1607 @@
+package kingdom;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class game {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int defense = 50;		
+		int year = 0;
+		int food = 50;
+		int money = 50;
+		int happiness = 50;
+		String choice;
+		boolean bool = true;
+		System.out.println("Main options are 'yes' and 'no', if you'd like to see your stats say 'stats'");
+		System.out.println("if you'd like to see auto win say 'cheat' and if any other word is said you will recieve a penalty");
+		//this is how you print a random number
+		//VVVVVVVV
+		/*double test = (int)(Math.random()*100);
+System.out.println(test);
+		 */
+
+		//this is how to print words based on the number that prints
+
+		/*double test = (int)(Math.random()*10);
+System.out.println(test);
+
+if (test == 9.0){
+	System.out.println("worked");
+}*/
+
+
+			//bulk messages VVVVV
+		/*	if (test == X){
+				System.out.println("X");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				game.X = game.X + X;
+				game.X = game.X - X; 
+				System.out.println("X is " + game.X);
+				System.out.println("X is " + game.X);
+				}else if (choice.equals("no")){
+					game.X = game.X - X;
+					game.X = game.X + X; 
+					System.out.println("X is " + game.X);
+					System.out.println("X is " + game.X);
+				}else if (choice.equals("cheat")){
+								year = 20;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+*/
+		
+		while(year < 25){
+			int [] PlayTest = new int[10];
+			PlayTest [0] = 20; //Total ending was Y:20 M:45 D:35 F:25 H:20(0)
+			PlayTest [1] = 20; //Total ending was Y:20 M:45 D:65 F:55 H:65(0)
+			PlayTest [2] = 20; //Total ending was Y:20 M:20 D:40 F:70 H:30(0)
+							//after slight balances it's apparent that food needs a nerf and so does
+							//happiness, money needs a slight nerf as does defense
+			PlayTest [3] = 18; //Total ending was Y:18 M:05 D:-5 F:35 H:50(2)
+			PlayTest [4] = 20; //Total ending was Y:20 M:15 D:45 F:55 H:50(1) 
+			PlayTest [5] = 20; //Total ending was Y:20 M:70 D:50 F:90 H:45(0)
+							//Player test!
+			PlayTest [6] = 20; //Total ending was Y:20 M:65 D:40 F:35 H:20(0)
+							//everything needs a nerf
+			PlayTest [7] = 12; //Total ending was Y:12 M:-15 D:40 F:85 H:40(0)
+			double test = (int)(Math.random()* 19);
+			
+			
+			if (test == 1){
+				System.out.println("the people want a raise");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+					happiness = happiness + 10;
+					money = money - 10; 
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+				}else if (choice.equals("no")){
+					happiness = happiness - 25;
+					money = money + 15; 
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+				}else if (choice.equals("cheat")){
+					year = 25;
+					bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+			
+			
+			
+			if (test == 2){
+				System.out.println("The walls are old, they need repairing");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				defense = defense + 15;
+				money = money - 20; 
+				System.out.println("defense is " + defense);
+				System.out.println("money is " + money);
+				}else if (choice.equals("no")){
+					defense = defense - 20;
+					money = money + 10; 
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			
+			if (test == 3){
+				System.out.println("A drought came by; we need to purchase food to supply the kingdom");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+					if (choice.equals("yes")){
+				happiness = happiness - 5;
+				money = money - 10;
+				food = food + 15;
+				System.out.println("happiness is " + happiness);
+				System.out.println("money is " + money);
+				System.out.println("food is " + food);
+				}else if (choice.equals("no")){
+					happiness = happiness - 15;
+					money = money + 15;
+					food = food - 25;
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+					System.out.println("food is " + food);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}
+				else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 4){
+				System.out.println("we should recruit some men for defense");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				defense = defense + 15;
+				money = money - 10;
+				happiness = happiness - 5;
+				System.out.println("defense is " + defense);
+				System.out.println("money is " + money);
+				System.out.println("happiness is " + happiness);
+				}else if (choice.equals("no")){
+					defense = defense - 5;
+					money = money + 5; 
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 5){
+				System.out.println("The army needs more food on their patrol");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				defense = defense + 5;
+				food = food - 10;
+				System.out.println("defense is " + defense);
+				System.out.println("food is " + food);
+				}else if (choice.equals("no")){
+					defense = defense - 5;
+					food = food + 5;
+					happiness = happiness - 5;
+					System.out.println("defense is " + defense);
+					System.out.println("food is " + food);
+					System.out.println("happiness is " + happiness);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 6){
+				System.out.println("We found gold! lets put some men onto digging it");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				money = money + 25;
+				happiness = happiness - 15; 
+				food = food - 5;
+				System.out.println("money is " + money);
+				System.out.println("happiness is " + happiness);
+				System.out.println("food is " + food);
+				}else if (choice.equals("no")){
+					happiness = happiness + 5;
+					System.out.println("happiness is " + happiness);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 7){
+				System.out.println("The people want more patrols in their town");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				happiness = happiness + 10;
+				defense = defense - 10; 
+				System.out.println("happiness is " + happiness);
+				System.out.println("defense is " + defense);
+				}else if (choice.equals("no")){
+					happiness = happiness - 15;
+					defense = defense + 10; 
+					System.out.println("happiness is " + happiness);
+					System.out.println("defense is " + defense);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 8){
+				System.out.println("our growing populous needs more wheat fields");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				food = food + 15;
+				money = money - 15; 
+				System.out.println("food is " + food);
+				System.out.println("money is " + money);
+				}else if (choice.equals("no")){
+					food = food - 15;
+					money = money + 5; 
+					System.out.println("food is " + food);
+					System.out.println("money is " + money);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			if (test == 9){
+				System.out.println("(a strange man approaches) 'is defense more important than wealth?'");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				defense = defense + 10;
+				money = money - 5; 
+				System.out.println("defense is " + defense);
+				System.out.println("money is " + money);
+				}else if (choice.equals("no")){
+					defense = defense - 5;
+					money = money + 10; 
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			if (test == 10){
+				System.out.println("will you tip a fellow human down on 'is luck?");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				happiness = happiness + 5;
+				money = money - 5; 
+				System.out.println("money is " + money);
+				System.out.println("happiness is " + happiness);
+				}else if (choice.equals("no")){
+					happiness = happiness - 10;
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is you're a scumbag");
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			if (test == 17){
+				System.out.println("(A strange man approaches) Give us food and gold and food (he's not too good with grammar) or you will die!");
+				System.out.println(("Denying will give a 33% chance to die"));
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				money = money - 15;
+				food = food - 15; 
+				System.out.println("money is " + money);
+				System.out.println("food is " + food);
+				}else if (choice.equals("no")){
+					double dead = (int)(Math.random()* 3);
+					if (dead == 2){
+						System.out.println("A whistling sound flies through the air, you feel nothing but cold... your eyes fade to darkness");
+						bool = false;
+					}else{
+						System.out.println("An arrow flies through the air only to MISS you! what a lousy shot");
+					}
+					
+					
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			if (test == 18){
+				System.out.println("(Tracer approaches) Gimi 10 gold or I'll set you back 2 years!");
+				choice = scan.next();
+				if (choice.equals("stats")){
+					System.out.println("money: " + money);
+					System.out.println("defense: " + defense);
+					System.out.println("food: " + food);
+					System.out.println("happiness: " + happiness);
+					choice = scan.next();
+				}
+				if (choice.equals("yes")){
+				money = money - 5; 
+				System.out.println("money is " + money);
+				}else if (choice.equals("no")){
+					year = year - 2;
+					System.out.println("Year has been set back two. The year is now " + year);
+				}else if (choice.equals("cheat")){
+								year = 25;
+								bool = true;
+				}else{
+					System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+					System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+					defense = defense - 10;
+					food = food - 10;
+					money = money -10;
+					happiness = happiness - 10;
+					System.out.println("Everything -10");
+				}
+			year++;
+			System.out.println("The year is now " + year);
+		}
+			
+			
+			
+			
+			
+			
+			
+			if (year > 10){
+				if (test == 11){
+					System.out.println("Sickness, people are dying we need to give them medicine");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					happiness = happiness + 10;
+					money = money - 20;
+					food = food - 5;
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+					System.out.println("food is " + food);
+					}else if (choice.equals("no")){
+						happiness = happiness - 15;
+						defense = defense - 25;
+						food = food + 5;
+						System.out.println("defense is " + defense);
+						System.out.println("happiness is " + happiness);
+						System.out.println("food is " + food);
+					}else if (choice.equals("cheat")){
+									year = 25;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				if (test == 12){
+					System.out.println("New tools! you'd be wise to purchase them, they are the future after all");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					food = food + 15;
+					money = money - 5; 
+					System.out.println("money is " + money);
+					System.out.println("food is " + food);
+					}else if (choice.equals("no")){
+						food = food - 10;
+						money = money + 5;
+						System.out.println("food is " + food);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 25;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				
+				if (test == 13){
+					System.out.println("would you like to raise taxes?");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					money = money + 25;
+					happiness = happiness - 20; 
+					System.out.println("money is " + money);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						happiness = happiness + 5; 
+						money = money - 5;
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 25;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				if (test == 14){
+					System.out.println("We should change our laws to force younger ages to serve in our garrison");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					defense = defense + 30;
+					happiness = happiness - 20; 
+					money = money - 5;
+					System.out.println("defense is " + defense);
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+					}else if (choice.equals("no")){
+						defense = defense - 15;
+						happiness = happiness + 15; 
+						System.out.println("defense is " + defense);
+						System.out.println("happiness is " + happiness);
+					}else if (choice.equals("cheat")){
+									year = 25;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				
+				
+				}
+			if (year > 15){
+				if (test == 15){
+					System.out.println("The western kingdoms has called for war, they are focusing our wheat fields! we need money and soldiers");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					money = money - 20;
+					defense = defense - 20;
+					happiness = happiness + 10;
+					System.out.println("money is " + money);
+					System.out.println("defense is " + defense);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						food = food - 35;
+						happiness = happiness - 10; 
+						System.out.println("happiness is " + happiness);
+						System.out.println("food is " + food);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 20;
+						food = food - 20;
+						money = money -20;
+						happiness = happiness - 20;
+						System.out.println("Everything -20 (cheated on big descision");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				if (test == 16){
+					System.out.println("The Eastern kingdoms would like to trade with us! you'd be a fool not to accept");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					money = money + 15;
+					defense = defense + 5;
+					food = food + 15;
+					happiness = happiness + 5;
+					System.out.println("money is " + money);
+					System.out.println("defense is " + defense);
+					System.out.println("food is " + food);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						happiness = happiness - 5;		
+						System.out.println("the people are dissapointed, -5 happiness");
+					}else if (choice.equals("cheat")){
+									year = 25;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+			}
+			
+			
+			
+
+			
+			
+			
+			if (happiness > 100){
+				System.out.println("Weve grown soft, the people expect so much more from us now");
+				happiness = 30;
+				System.out.println("happiness is now 30");
+			}
+			if (happiness < 1){
+				double role = (int)(Math.random()* 4);
+				if (role == 1){
+					System.out.println("Uprising, we need to use the army to take them out (must say yes)");
+					defense = defense - 35;
+					System.out.println("defense is " + defense);
+					happiness = 50;
+				}
+				if (role == 2){
+					System.out.println("The people took the court jester hostage, they demanded money (must say yes, how could you lose the jester!)");
+					money = money - 35;
+					System.out.println("money is " + money);
+					happiness = 50;
+				}
+				if (role == 3){
+					System.out.println("The people got mad and burned the fields, but now they need our food or they’ll get even madder (must say yes)");
+					food = food - 35;
+					System.out.println("food is " + food);
+					happiness = 50;
+				}
+				System.out.println("happiness is returned to 50");
+			}
+			
+			if (defense > 99){
+				System.out.println("It seems the general has defected with most our garrison..");
+				defense = 30;
+				System.out.println("defense is now 30");
+			}
+			if (defense < 1){
+				System.out.println("Your walls crumble, the kingdom is no more than a pile of rubble");
+				bool = false;
+			}
+			if (food > 99){
+				System.out.println("You hosted a great party! which drained all your food.. at least some people are happy (+5 happiness");
+				food = 30;
+				happiness = happiness + 5;
+				System.out.println("food is now 30");
+			}
+			if (food < 1){
+				System.out.println("Your people starve, you know that you too shall shortly follow");
+				bool = false;
+			}
+			if (money > 99){
+				System.out.println("How many times have i told you not to gamble mlord!");
+				money = 30;
+				System.out.println("money is now 30");
+			}
+			if (money < 1){
+				
+				System.out.println("Your kingdom has been bought by a billionaire named Hagatha Trump");
+				bool = false;
+			}
+			if (bool == false)break;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if (bool == true){
+			System.out.println("You have withstood your rule!");
+		}else if (bool == false){
+			System.out.println("Your kingdom has failed!");
+		}
+if (bool == true){
+	System.out.println("do you want to continue your rule? (this is endless mode if you want to finish say 'no'");
+	System.out.println("if you want to go into endless say 'yes')");
+	choice = scan.next();
+			if (choice.equals("yes")){
+				while (bool == true){
+				double test = (int)(Math.random()* 18);
+				
+				
+				if (test == 1){
+					System.out.println("the people want a raise");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+						happiness = happiness + 15;
+						money = money - 20; 
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+					}else if (choice.equals("no")){
+						happiness = happiness - 25;
+						money = money + 10; 
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+						year = 20;
+						bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+				
+				
+				
+				if (test == 2){
+					System.out.println("The walls are old, they need repairing");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					defense = defense + 15;
+					money = money - 20; 
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+					}else if (choice.equals("no")){
+						defense = defense - 20;
+						money = money + 10; 
+						System.out.println("defense is " + defense);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				
+				if (test == 3){
+					System.out.println("A drought came by; we need to purchase food to supply the kingdom");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+						if (choice.equals("yes")){
+					happiness = happiness - 5;
+					money = money - 20;
+					food = food + 20;
+					System.out.println("happiness is " + happiness);
+					System.out.println("money is " + money);
+					System.out.println("food is " + food);
+					}else if (choice.equals("no")){
+						happiness = happiness - 20;
+						money = money + 10;
+						food = food - 25;
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+						System.out.println("food is " + food);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}
+					else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 4){
+					System.out.println("we should recruit some men for defense");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					defense = defense + 10;
+					money = money - 10;
+					happiness = happiness - 5;
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						defense = defense - 5;
+						money = money + 5; 
+						System.out.println("defense is " + defense);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 5){
+					System.out.println("The army needs more food on their patrol");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					defense = defense + 5;
+					food = food - 10;
+					System.out.println("defense is " + defense);
+					System.out.println("food is " + food);
+					}else if (choice.equals("no")){
+						defense = defense - 5;
+						food = food + 5;
+						happiness = happiness - 5;
+						System.out.println("defense is " + defense);
+						System.out.println("food is " + food);
+						System.out.println("happiness is " + happiness);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 6){
+					System.out.println("We found gold! lets put some men onto digging it");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					money = money + 20;
+					happiness = happiness - 15; 
+					System.out.println("money is " + money);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						happiness = happiness + 5;
+						System.out.println("happiness is " + happiness);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 7){
+					System.out.println("The people want more patrols in their town");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					happiness = happiness + 10;
+					defense = defense - 10; 
+					System.out.println("happiness is " + happiness);
+					System.out.println("defense is " + defense);
+					}else if (choice.equals("no")){
+						happiness = happiness - 15;
+						defense = defense + 10; 
+						System.out.println("happiness is " + happiness);
+						System.out.println("defense is " + defense);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 8){
+					System.out.println("our growing populous needs more wheat fields");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					food = food + 15;
+					money = money - 15; 
+					System.out.println("food is " + food);
+					System.out.println("money is " + money);
+					}else if (choice.equals("no")){
+						food = food - 15;
+						money = money + 5; 
+						System.out.println("food is " + food);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				if (test == 9){
+					System.out.println("(a strange man approaches) 'is defense more important than wealth?'");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					defense = defense + 10;
+					money = money - 5; 
+					System.out.println("defense is " + defense);
+					System.out.println("money is " + money);
+					}else if (choice.equals("no")){
+						defense = defense - 5;
+						money = money + 10; 
+						System.out.println("defense is " + defense);
+						System.out.println("money is " + money);
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				if (test == 10){
+					System.out.println("will you tip a fellow human down on 'is luck?");
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					happiness = happiness + 5;
+					money = money - 5; 
+					System.out.println("money is " + money);
+					System.out.println("happiness is " + happiness);
+					}else if (choice.equals("no")){
+						happiness = happiness - 10;
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is you're a scumbag");
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				if (test == 17){
+					System.out.println("(A strange man approaches) Give us food and gold and food or you will die!");
+					System.out.println(("Denying will give a 33% chance to die"));
+					choice = scan.next();
+					if (choice.equals("stats")){
+						System.out.println("money: " + money);
+						System.out.println("defense: " + defense);
+						System.out.println("food: " + food);
+						System.out.println("happiness: " + happiness);
+						choice = scan.next();
+					}
+					if (choice.equals("yes")){
+					money = money - 15;
+					food = food - 15; 
+					System.out.println("money is " + money);
+					System.out.println("food is " + food);
+					}else if (choice.equals("no")){
+						double dead = (int)(Math.random()* 3);
+						if (dead == 2){
+							System.out.println("A whistling sound flies through the air, you feel nothing but cold... your eyes fade to darkness");
+							bool = false;
+						}else{
+							System.out.println("An arrow flies through the air only to MISS you! what a lousy shot");
+						}
+						
+						
+					}else if (choice.equals("cheat")){
+									year = 20;
+									bool = true;
+					}else{
+						System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+						System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+						defense = defense - 10;
+						food = food - 10;
+						money = money -10;
+						happiness = happiness - 10;
+						System.out.println("Everything -10");
+					}
+				year++;
+				System.out.println("The year is now " + year);
+			}
+				
+				
+				
+				if (year > 5){
+					if (test == 11){
+						System.out.println("Sickness, people are dying we need to give them medicine");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						happiness = happiness + 10;
+						money = money - 20;
+						food = food - 5;
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+						System.out.println("food is " + food);
+						}else if (choice.equals("no")){
+							happiness = happiness - 15;
+							defense = defense - 25;
+							food = food + 5;
+							System.out.println("defense is " + defense);
+							System.out.println("happiness is " + happiness);
+							System.out.println("food is " + food);
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 10;
+							food = food - 10;
+							money = money -10;
+							happiness = happiness - 10;
+							System.out.println("Everything -10");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					if (test == 12){
+						System.out.println("New tools! you'd be wise to purchase them, they are the future after all");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						food = food + 15;
+						money = money - 5; 
+						System.out.println("money is " + money);
+						System.out.println("food is " + food);
+						}else if (choice.equals("no")){
+							food = food - 10;
+							money = money + 5;
+							System.out.println("food is " + food);
+							System.out.println("money is " + money);
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 10;
+							food = food - 10;
+							money = money -10;
+							happiness = happiness - 10;
+							System.out.println("Everything -10");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					
+					
+					
+					if (test == 13){
+						System.out.println("would you like to raise taxes?");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						money = money + 25;
+						happiness = happiness - 20; 
+						System.out.println("money is " + money);
+						System.out.println("happiness is " + happiness);
+						}else if (choice.equals("no")){
+							happiness = happiness + 5; 
+							money = money - 5;
+							System.out.println("happiness is " + happiness);
+							System.out.println("money is " + money);
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 10;
+							food = food - 10;
+							money = money -10;
+							happiness = happiness - 10;
+							System.out.println("Everything -10");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					if (test == 14){
+						System.out.println("We should change our laws to force younger ages to serve in our garrison");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						defense = defense + 30;
+						happiness = happiness - 20; 
+						money = money - 5;
+						System.out.println("defense is " + defense);
+						System.out.println("happiness is " + happiness);
+						System.out.println("money is " + money);
+						}else if (choice.equals("no")){
+							defense = defense - 15;
+							happiness = happiness + 15; 
+							System.out.println("defense is " + defense);
+							System.out.println("happiness is " + happiness);
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 10;
+							food = food - 10;
+							money = money -10;
+							happiness = happiness - 10;
+							System.out.println("Everything -10");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					
+					
+					
+					
+					}
+				if (year > 10){
+					if (test == 15){
+						System.out.println("The western kingdoms has called for war, they are focusing our wheat fields! we need money and soldiers");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						money = money - 20;
+						defense = defense - 20;
+						happiness = happiness + 10;
+						System.out.println("money is " + money);
+						System.out.println("defense is " + defense);
+						System.out.println("happiness is " + happiness);
+						}else if (choice.equals("no")){
+							food = food - 35;
+							happiness = happiness - 10; 
+							System.out.println("happiness is " + happiness);
+							System.out.println("food is " + food);
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 20;
+							food = food - 20;
+							money = money -20;
+							happiness = happiness - 20;
+							System.out.println("Everything -20 (cheated on big descision");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					if (test == 16){
+						System.out.println("The Eastern kingdoms would like to trade with us! you'd be a fool not to accept");
+						choice = scan.next();
+						if (choice.equals("stats")){
+							System.out.println("money: " + money);
+							System.out.println("defense: " + defense);
+							System.out.println("food: " + food);
+							System.out.println("happiness: " + happiness);
+							choice = scan.next();
+						}
+						if (choice.equals("yes")){
+						money = money + 15;
+						defense = defense + 5;
+						food = food + 15;
+						happiness = happiness + 5;
+						System.out.println("money is " + money);
+						System.out.println("defense is " + defense);
+						System.out.println("food is " + food);
+						System.out.println("happiness is " + happiness);
+						}else if (choice.equals("no")){
+							happiness = happiness - 5;		
+							System.out.println("the people are dissapointed, -5 happiness");
+						}else if (choice.equals("cheat")){
+										year = 20;
+										bool = true;
+						}else{
+							System.out.println("Err i swear i heard that you said fire a volley at the southeast side of town");
+							System.out.println("(please only say 'yes' or 'no' (if you wish to see the end say 'cheat' if you wish to say stats say 'stats'");
+							defense = defense - 10;
+							food = food - 10;
+							money = money -10;
+							happiness = happiness - 10;
+							System.out.println("Everything -10");
+						}
+					year++;
+					System.out.println("The year is now " + year);
+				}
+					
+				}
+				
+				
+				
+
+				
+				
+				
+				if (happiness > 100){
+					System.out.println("Weve grown soft, the people expect so much more from us now");
+					happiness = 30;
+					System.out.println("happiness is now 30");
+				}
+				if (happiness < 1){
+					double role = (int)(Math.random()* 3);
+					if (role == 1){
+						System.out.println("Uprising, we need to use the army to take them out (must say yes)");
+						defense = defense - 35;
+						System.out.println("defense is " + defense);
+						happiness = 50;
+					}
+					if (role == 2){
+						System.out.println("The people took the court jester hostage, they demanded money (must say yes, how could you lose the jester!)");
+						money = money - 35;
+						System.out.println("money is " + money);
+						happiness = 50;
+					}
+					if (role == 3){
+						System.out.println("The people got mad and burned the fields, but now they need our food or they’ll get even madder (must say yes)");
+						food = food - 35;
+						System.out.println("food is " + food);
+						happiness = 50;
+					}
+					System.out.println("happiness is returned to 50");
+				}
+				
+				if (defense > 99){
+					System.out.println("It seems the general has defected with most our garrison..");
+					defense = 30;
+					System.out.println("defense is now 30");
+				}
+				if (defense < 1){
+					System.out.println("Your walls crumble, the kingdom is no more than a pile of rubble");
+					bool = false;
+				}
+				if (food > 99){
+					System.out.println("You hosted a great party! which drained all your food.. at least some people are happy (+5 happiness");
+					food = 30;
+					happiness = happiness + 5;
+					System.out.println("food is now 30");
+				}
+				if (food < 1){
+					System.out.println("Your people starve, you know that you too shall shortly follow");
+					bool = false;
+				}
+				if (money > 99){
+					System.out.println("How many times have i told you not to gamble mlord!");
+					money = 30;
+					System.out.println("money is now 30");
+				}
+				if (money < 1){
+					
+					System.out.println("Your kingdom has been bought by a billionaire named Hagatha Trump");
+					bool = false;
+				}
+				if (year < 0){
+					
+					System.out.println("You were never born, tracer takes the throne and when you are finally born, you live a life tending to the sows");
+					bool = false;
+				}
+
+				if (bool == false)break;
+			
+			}
+}
+if (choice.equals("no")){
+	System.out.println("Thanks for playing");
+}
+System.out.println("Congrats you survived " + year + " turns");
+	}
+
+}
+}
